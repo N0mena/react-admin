@@ -8,5 +8,6 @@ const dataProvider = jsonServerProvider("http://localhost:3002");
 export const App = () => <Admin dataProvider={dataProvider}>
     <Resource name="employees"  
     list={EmployeeList}
-    create={EmployeeCreate}/>
+    create={EmployeeCreate}
+    edit={EmployeeCreate}/>
 </Admin>;
