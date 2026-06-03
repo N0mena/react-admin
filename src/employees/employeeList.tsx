@@ -37,7 +37,7 @@ export const EmployeeList = () => (
                 label="Salaire"
                 options={{
                     style: "currency",
-                    currency: "Ar"
+                    currency: "Eur"
                 }}
             />
 
