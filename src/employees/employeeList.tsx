@@ -9,6 +9,7 @@ import {
     SearchInput,
     SelectInput
 } from "react-admin";
+import { QuickStatusToggle } from "./quickStatusToggle";
 
 const employeeFilters = [
     <SearchInput source="q" alwaysOn />,
@@ -21,30 +22,40 @@ const employeeFilters = [
             { id: "RH", name: "RH" },
             { id: "Finance", name: "Finance" }
         ]}
+    />,
+    <SelectInput
+        source="active"
+        label="Statut"
+        choices={[
+            { id: true, name: "Active" },
+            { id: false, name: "Non-active" }
+        ]}
     />
 ];
 
 export const EmployeeList = () => (
     <List filters={employeeFilters} perPage={5}>
         <Datagrid rowClick="edit">
-            <TextField source="firstname" label="Prénom" />
-            <TextField source="lastname" label="Nom" />
+
+            <TextField source="firstname" label="First name" />
+            <TextField source="lastname" label="Last name" />
             <TextField source="email" label="Email" />
-            <TextField source="department" label="Département" />
+            <TextField source="department" label="Department" />
 
             <NumberField
                 source="salary"
-                label="Salaire"
+                label="Salary"
                 options={{
                     style: "currency",
                     currency: "Eur"
                 }}
             />
 
-            <BooleanField source="active" label="Actif" />
+            <BooleanField source="active" label="Active" />
 
             <EditButton />
             <DeleteButton />
+            
         </Datagrid>
     </List>
 );
