@@ -55,7 +55,7 @@ export const EmployeeList = () => (
 
             <EditButton />
             <DeleteButton />
-            
+            <QuickStatusToggle/>
         </Datagrid>
     </List>
 );
