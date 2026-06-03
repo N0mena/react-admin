@@ -1,16 +1,16 @@
 {
   "employees": [
     {
-      "id": 1,
+      "id": "1",
       "firstname": "Alice",
       "lastname": "Martin",
       "email": "alice@company.com",
       "department": "Informatique",
-      "salary": 2800,
+      "salary": 1500,
       "active": true
     },
     {
-      "id": 2,
+      "id": "2",
       "firstname": "Bod",
       "lastname": "Dylan",
       "email": "bob@company.com",
@@ -19,7 +19,7 @@
       "active": true
     },
     {
-      "id": 3,
+      "id": "3",
       "firstname": "Clara",
       "lastname": "Nguyen",
       "email": "clara@company.com",
@@ -27,5 +27,58 @@
       "salary": 2600,
       "active": false
     }
-  ]
+  ],
+    "interns": [
+    {
+      "id": 1,
+      "firstname": "Domoina",
+      "lastname": "Randria",
+      "email": "radnrido@gmail.com",
+      "department": "RH",
+      "managerId": 2,
+      "isRemunerate": true,
+      "remuneration": 800
+    },
+    {
+      "id": 2,
+      "firstname": "Soa",
+      "lastname": "Rabe",
+      "email": "soa@gmail.com",
+      "department": "Informatique",
+      "managerId": 1,
+      "isRemunerate": true,
+      "remuneration": 900
+    },
+    {
+      "id": 3,
+      "firstname": "Fanantenana",
+      "lastname": "Ranja",
+      "email": "ranja@gmail.com",
+      "department": "Informatique",
+      "managerId": 4,
+      "isRemunerate": false,
+      "remuneration": 0
+    },
+    {
+      "id": 4,
+      "firstname": "Tia",
+      "lastname": "Rabema",
+      "email": "tia@gmail.com",
+      "department": "Finance",
+      "managerId": 5,
+      "isRemunerate": false,
+      "remuneration": 0
+    },
+    {
+      "id": 5,
+      "firstname": "Fiderana",
+      "lastname": "Lova",
+      "email": "lovao@gmail.com",
+      "department": "Marketing",
+      "managerId": 6,
+      "isRemunerate": true,
+      "remuneration": 800
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
